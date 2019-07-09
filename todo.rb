@@ -20,6 +20,7 @@ class TaskList
   def display_all_tasks
     @list.each do |task|
       puts task.value
+
     end
   end
 
