@@ -1,4 +1,4 @@
-1. Add new task
+1. Add new task X
 2. Remove task
 3. Mark task as done
 4. Display
@@ -7,4 +7,4 @@
 
 I have to deal with:
 - task
--list of tasks
+-list of tasks X
