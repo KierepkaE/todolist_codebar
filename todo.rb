@@ -33,6 +33,7 @@ class TaskList
   def display_done_tasks
     @list.select(&:done?).each do |task|
       puts task.value
+      # print "    ✅ "
     end
   end
 
@@ -58,6 +59,7 @@ class Task
 
   def set_as_done
     @done = true
+
   end
 
   def set_as_pending
