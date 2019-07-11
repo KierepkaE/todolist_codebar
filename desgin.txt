@@ -1,10 +1,16 @@
-1. Add new task X
-2. Remove task
-3. Mark task as done
-4. Display
-5. Remove all
-(6.Mark all as done)
+What I want TodoList to do:
+- add new task
+- remove all tasks
+- remove done tasks
+- display all tasks
+- display all pending  tasks
+- display all done tasks
 
-I have to deal with:
-- task
--list of tasks X
+What I want Task to do:
+- check if the task is done
+- set task ask done
+- set task as pending
+
+What else:
+- add tests
+- save and load list to/from file
