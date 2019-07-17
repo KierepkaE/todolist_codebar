@@ -19,7 +19,7 @@ class TaskList
 
   def display_all_tasks
     @list.each_with_index do |task,index|
-      puts "Task number #{index} value: #{task.value} and the status is: #{task.done}"
+      puts "Task number #{index} value: #{task.value} and the status is: #{task.emoji_status}"
     end
   end
 
