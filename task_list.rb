@@ -18,22 +18,21 @@ class TaskList
   end
 
   def display_all_tasks
-    @list.each do |task|
-      puts task.value
-
+    @list.each_with_index do |task,index|
+      puts "Task number #{index} value: #{task.value} and the status is: #{task.done}"
     end
   end
 
   def display_pending_tasks
-    pending_tasks.each do |task|
+    pending_tasks.each_with_index do |task,index|
       puts task.value
+
     end
   end
 
   def display_done_tasks
     @list.select(&:done?).each do |task|
       puts task.value
-      # print "    ✅ "
     end
   end
 
