@@ -24,6 +24,7 @@ class Task
 
   def set_as_pending
     @done = false
+    emoji_status
   end
 
   def to_s
