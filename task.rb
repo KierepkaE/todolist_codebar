@@ -11,20 +11,18 @@ class Task
 
   def set_as_done
     @done = true
-    emoji_status
   end
 
   def emoji_status
     if @done
-      @value += '                 ✅  '
+    '                 ✅  '
     else
-      @value += '                 ❌  '
+     '                 ❌  '
     end
   end
 
   def set_as_pending
     @done = false
-    emoji_status
   end
 
   def to_s
