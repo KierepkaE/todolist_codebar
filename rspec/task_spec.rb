@@ -10,4 +10,12 @@ describe Task do
       expect(task.done).to eq(false)
     end
   end
+
+  describe "#set_as_done" do
+    it "changes the value of done to true" do
+      task = Task.new("eat pizza")
+      task.set_as_done
+      expect(task.done).to eq(true)
+    end
+  end
 end
