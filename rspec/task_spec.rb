@@ -18,4 +18,17 @@ describe Task do
       expect(task.done).to eq(true)
     end
   end
+
+  describe "#done?" do
+    it "return default value of done" do
+    task = Task.new("drink acerola")
+    expect(task.done?).to eq(false)
+    end
+
+    it "return changed value of done" do
+      task = Task.new("eat kimchi")
+      task.set_as_done
+      expect(task.done).to eq(true)
+    end
+  end
 end
