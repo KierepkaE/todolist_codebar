@@ -1,6 +1,6 @@
 
 class Task
-  attr_accessor :value
+  attr_accessor :value, :done
   def initialize(value)
     @done = false
     @value = value
@@ -11,7 +11,15 @@ class Task
 
   def set_as_done
     @done = true
+    emoji_status
+  end
 
+  def emoji_status
+    if @done
+      @value += '                 ✅  '
+    else
+      @value += '                 ❌  '
+    end
   end
 
   def set_as_pending
