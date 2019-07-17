@@ -2,12 +2,13 @@ require_relative '../task'
 
 describe Task do
   describe "#initialize " do
+    let(:value) {"cook"}
+    let(:task) {Task.new(value)}
+
     it "creates a task with value as an argument" do
-      task = Task.new("make shopping")
-      expect(task.value).to eq("make shopping")
+      expect(task.value).to eq(value)
     end
     it "sets the default value of done as false" do
-      task = Task.new("go for a walk")
       expect(task.done).to eq(false)
     end
   end
