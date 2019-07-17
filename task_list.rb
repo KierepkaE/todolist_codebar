@@ -46,23 +46,3 @@ class TaskList
     @list - @list.select(&:done?)
   end
 end
-
-class Task
-  attr_accessor :value
-  def initialize(value)
-    @done = false
-    @value = value
-  end
-  def done?
-    @done
-  end
-
-  def set_as_done
-    @done = true
-
-  end
-
-  def set_as_pending
-    @done = false
-  end
-end
