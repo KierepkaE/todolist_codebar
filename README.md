@@ -1,4 +1,4 @@
-# to do app - codebar projects
+# to do app - codebar project
 
 
-### command line todo app
+### command line basic to do app
