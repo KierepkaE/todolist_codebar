@@ -22,13 +22,13 @@ describe Task do
   end
 
   describe "#done?" do
+    let(:value) {"cook"}
+    let(:task) {Task.new(value)}
     it "return default value of done" do
-    task = Task.new("drink acerola")
     expect(task.done?).to eq(false)
     end
 
     it "return changed value of done" do
-      task = Task.new("eat kimchi")
       task.set_as_done
       expect(task.done).to eq(true)
     end
