@@ -33,6 +33,7 @@ describe Task do
       expect(task.done).to eq(true)
     end
   end
+
   describe "#set_as_pending" do
     let(:value) {"cook"}
     let(:task) {Task.new(value)}
@@ -41,4 +42,11 @@ describe Task do
     expect(task.done).to eq false
    end
   end
+  describe "#to_s" do
+    let(:value) {"cook"}
+    let(:task) {Task.new(value)}
+    it "returns value as a string" do
+      expect(task.to_s).to eq task.to_s
+    end
+end
 end
