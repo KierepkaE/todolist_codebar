@@ -2,3 +2,6 @@
 
 
 ### command line basic to do app
+
+- Ruby
+- Rspec
