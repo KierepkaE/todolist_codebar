@@ -1,7 +1,8 @@
 # to do app - codebar project
 
+Basic command line to do app. 
+You can add new task, list pending tasks and already done tasks. 
 
-### command line basic to do app
+## Running tests
 
-- Ruby
-- Rspec
+`rspec`
