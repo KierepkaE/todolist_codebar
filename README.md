@@ -6,6 +6,7 @@ You can add new task, list pending tasks and already
 ## tech
 
 - ruby
+- rspec
 
 
 ## Running tests
