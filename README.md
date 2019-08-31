@@ -5,8 +5,8 @@ You can add new task, list pending tasks and already
 
 ## tech
 
-` ruby `
-` rspec`
+- ` ruby `
+- ` rspec`
 
 
 ## Running tests
